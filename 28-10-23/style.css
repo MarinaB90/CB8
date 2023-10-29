@@ -1,0 +1,271 @@
+/* COLORS */
+/* #ffeb3b giallo */
+/* #212121 nero */
+/* #bdbdbd grigio chiaro */
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+/* end reset */
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* global */
+.container {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: 0.5px solid #212121;
+  border-radius: 10px;
+  color: #ffeb3b;
+  background-color: #212121;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffeb3b;
+  color: #212121;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: 0.5px solid #ffeb3b;
+  border-radius: 10px;
+  color: #212121;
+  background-color: #ffeb3b;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button2:hover {
+  background-color: #212121;
+  color: #ffeb3b;
+}
+
+.button3 {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: 0.5px solid #212121;
+  border-radius: 10px;
+  color: #ffeb3b;
+  background-color: #212121;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.button3:hover {
+  background-color: #ffeb3b;
+  color: #212121;
+}
+/* end global */
+
+/* typography */
+h1 {
+  font-size: 48;
+}
+
+h2 {
+  font-size: 40;
+}
+
+h3 {
+  font-size: 36;
+}
+
+h4 {
+  font-size: 28;
+}
+
+h5 {
+  font-size: 24;
+}
+
+h6 {
+  font-size: 18;
+}
+/* end typography*/
+
+/* HEADER */
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #212121;
+}
+
+.header-wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: #ffeb3b;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.main-nav a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+/* END HEADER */
+
+/* HERO */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffeb3b;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.hero-text {
+  color: #212121;
+  width: 100%;
+  font-weight: bold;
+}
+
+.hero-text .welcome {
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-description {
+  margin-bottom: 20px;
+}
+
+/* media query  per responsive, dispositivi con dimensione minima orizzontale di 768px (da tablet in poi) */
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding-top: 0; /*  azzeriamo padding superiore assegnato per mobile */
+  }
+  .hero-text,
+  .hero-image {
+    width: 50%; /* larghezza al 50% per avere due colonne una di fianco all'altra per dispositivi non mobile */
+  }
+}
+/* END HERO */
+
+/* POST HERO */
+.post-hero {
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+}
+
+.post-hero-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+}
+
+.post-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-hero-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-hero-wrapper {
+    padding-top: 0;
+  }
+  .post-hero-text,
+  .post-hero-image {
+    width: 50%;
+  }
+}
+/* END POST HERO */
+
+/* POST HERO2 */
+.post-hero2 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffeb3b;
+}
+
+.post-hero-text2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #212121;
+}
+
+.post-hero-image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-hero-description2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-hero-wrapper {
+    padding-top: 0;
+  }
+  .post-hero-text,
+  .post-hero-image {
+    width: 50%;
+  }
+}
+/* END POST HERO2 */
+
+.footer {
+  background-color: #212121;
+  color: #bdbdbd;
+  text-align: center;
+}
